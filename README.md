@@ -10,7 +10,7 @@ BACKGROUND OF DATA - The data is based on various measurements of Human Activity
 
 Here is a link to the project: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-There were a total of 30 subjects that were involved in both a training and testing session.  Each subject performed 6 movements or activities. The accelerometer data features included 561 different values.  The assignment requires that we combine each of the independent datasets to create a tidy data set that presents average value of each feature for each subject and their corresponding movements.  We are only including  83 of the 561 data features, all of which are values that represent the mean or standard deviation of particular feature.  This ultimately produces a data frame that has 180 unique observations (30 subjects x 6 movements) of 85 variables (83 features plus the subject and movement)
+There were a total of 30 subjects that were involved in both a training and testing session.  Each subject performed 6 movements or activities. The accelerometer data features included 561 different values.  The assignment requires that we combine each of the independent datasets to create a tidy data set that presents average value of each feature for each subject and their corresponding movements.  We are only including  85 of the 561 data features, all of which are values that represent the mean or standard deviation of particular feature.  This ultimately produces a data frame that has 180 unique observations (30 subjects x 6 movements) of 87 variables (85 features plus the subject and movement)
 
 
 READING DATA INTO R AND MANIPULATIONS - Establish the starting source datasets into their corresponding variables
