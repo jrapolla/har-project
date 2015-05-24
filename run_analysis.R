@@ -35,9 +35,9 @@
         subtest3$movement <- names(movement.code)[match(subtest3$movement, movement.code)]
         subtrain3$movement <- names(movement.code)[match(subtrain3$movement, movement.code)]
         total_data <- rbind(subtest3, subtrain3)
-        filtercolumn <- c(1:7, 42:47, 82:87, 122:127, 162:167, 202:203, 215:216, 228:229, 241:242, 254:255, 267:272, 295:297, 346:351, 425:430, 453:455, 504:505, 514, 517:518, 527, 530:531, 540, 543:544, 553, 556:563)
+        filtercolumn <- c(1:7, 42:47, 82:87, 122:127, 162:167, 202:203, 215:216, 228:229, 241:242, 254:255, 267:272, 295:297, 346:351, 374:376 425:430, 453:455, 504:505, 514, 517:518, 527, 530:531, 540, 543:544, 553, 557:563)
         totaldata2 <- total_data[, filtercolumn]
-        a <- colnames(totaldata2[2:84])
+        a <- colnames(totaldata2[2:86])
         totaldata2melt <- melt(totaldata2, id=c("subject","movement"), measure.vars=a)
         td7 <- dcast(totaldata2melt, subject + movement ~ variable, fun.aggregate = mean, na.rm = TRUE)
         write.table(td7, "step5tidydata.txt", row.name=FALSE) #exports text file per assignment instructions
