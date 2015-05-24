@@ -1,5 +1,5 @@
 # har-project
-R Script for Tidy Data Project 
+run_analysis.R script overview for Course Project - Getting and Cleaning Data
 
 INTRO - Downloading source zip and establishing working directory
 I have commented out the first few lines of code that provide the steps needed to download the source dataset zip and then unpackage or extract the files, you must then set the working directory to the folder that is created when the zip file is extracted, the lesson descibes that this process should be assumed and that the working directory is set as well as the files exist, I added it in just in case a grader wanted to test the results and needed to download the files. 
