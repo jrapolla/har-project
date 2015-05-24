@@ -40,5 +40,5 @@
         a <- colnames(totaldata2[2:84])
         totaldata2melt <- melt(totaldata2, id=c("subject","movement"), measure.vars=a)
         td7 <- dcast(totaldata2melt, subject + movement ~ variable, fun.aggregate = mean, na.rm = TRUE)
-        write.table(td7, "step5tidydata.txt", row.name=FALSE)
-        
+        write.table(td7, "step5tidydata.txt", row.name=FALSE) #exports text file per assignment instructions
+        View(td7) #displays final dataset for validation
